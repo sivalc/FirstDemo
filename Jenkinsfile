@@ -27,6 +27,7 @@ pipeline {
     post {
         always {
           echo "echo Done"
+          deleteDir()
         }
         changed {
           echo "echo something changes"
