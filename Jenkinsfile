@@ -10,7 +10,7 @@ pipeline {
             post {
                 success {
                     //junit 'target/surefire-reports/**/*.xml' 
-                    archiveArtifacts artifacts: '**/target/*.jar'
+                    archiveArtifacts artifacts: '**/target/*.war'
                 }
             }
         }
